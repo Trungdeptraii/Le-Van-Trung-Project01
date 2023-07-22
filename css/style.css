@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #2C2C2C;
+  line-height: 1.2;
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  --container-width: 1440px ;
+}
+
+.header {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+.header .margin-custom {
+  margin: 0;
+  padding: 0;
+}
+.header .header-content {
+  height: 130px;
+  display: flex;
+}
+.header .header-body {
+  display: flex;
+  margin-left: auto;
+  gap: 60px;
+}
+.header .header-body .header-manu .manu-lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 60px;
+}
+.header .header-body .header-manu .manu-lists .manu-item a {
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  line-height: 2.6rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.header .header-body .header-manu .manu-lists .manu-item a.active {
+  color: #46B20F;
+}
+.header .header-body .header-manu .manu-lists .manu-item a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #46B20F;
+  bottom: -52px;
+  left: 0;
+}
+.header .header-body .header-manu .manu-lists .manu-item a:hover {
+  color: #46B20F;
+}
+.header .header-body .header-icon {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 60px;
+}
+.header .header-body .header-icon .cart-icon, .header .header-body .header-icon .search-icon {
+  line-height: 130px;
+}
+
+.introduction {
+  position: relative;
+  height: 850px;
+}
+.introduction .intro-content {
+  margin-top: 261px;
+}
+.introduction h2 {
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 800;
+}
+.introduction h1 {
+  color: #2C2C2C;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-right: 200px;
+  margin-top: 25px;
+}
+.introduction p {
+  margin-top: 32px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.5px;
+  padding-right: 145px;
+}
+.introduction img {
+  position: absolute;
+  left: 0;
+}
+.introduction .img-content {
+  position: relative;
+}
+.introduction .img-content img {
+  position: absolute;
+  left: -20%;
+}
+.introduction .bg-choop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #DCFFCA;
+  width: 931px;
+  height: 850px;
+  border-radius: 20px 0 0 20px;
+  z-index: -1;
+}
+
+.detail-container {
+  margin: 120px 0 0 0;
+  height: 929px;
+}
+.detail-container .detail-header {
+  margin: 0 auto;
+  width: 772px;
+}
+.detail-container .detail-header h2 {
+  text-align: center;
+  color: #2C2C2C;
+  font-family: Inter;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 131.523%;
+  padding-right: 35px;
+}
+.detail-container .detail-header p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.5px;
+}
+.detail-container .detail-content {
+  background-image: url(../../assets/imgs/section/bg-detail.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 716px;
+}
+.detail-container .detail-content-prominent {
+  display: flex;
+  padding-top: 138px;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+.detail-container .prominent-pre, .detail-container .prominent-last {
+  width: 353px;
+  height: 405px;
+}
+.detail-container .prominent-pre .prominent-box, .detail-container .prominent-last .prominent-box {
+  height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  background-color: #FFF0E7;
+  margin: 40px 0 28px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-container .prominent-pre, .detail-container .prominent-last, .detail-container .prominent-center {
+  background-color: orange;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
+}
+.detail-container .prominent-center {
+  width: 411px;
+  height: 471px;
+}
+.detail-container .prominent-center .prominent-box {
+  height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  background-color: #F2FFEC;
+  margin: 40px 0 28px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-container span {
+  color: #2C2C2C;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 42px;
+}
+.detail-container p {
+  margin-top: 29px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  padding-left: 40px;
+}
+
+.products {
+  margin-top: 60px;
+}
+.products h2 {
+  text-align: center;
+  font-size: 38px;
+}
+.products .lists-product {
+  width: 1169px;
+  margin: 60px auto 0 auto;
+}
+.products .product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products .product-item .product-content {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.products .product-item .product-content .product-name {
+  margin-bottom: 35px;
+  position: relative;
+}
+.products .product-item .product-content .product-name h3 {
+  width: 100%;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #2C2C2C;
+  padding: 0 53px;
+}
+.products .product-item .product-content .product-name.nopadding h3 {
+  padding: 0;
+}
+.products .product-item .product-content .product-name span {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 2px;
+  background-color: #a3a3a3;
+  left: 40%;
+  bottom: -15px;
+}
+.products .product-item .product-content .product-quantity {
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #656565;
+}
+.products .product-item .product-content .price {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #2C2C2C;
+}
+.products .product-item .add-product {
+  background-color: #46B20F;
+  border-radius: 8px;
+  width: 185px;
+  padding: 16px 14px;
+  font-weight: 600;
+  color: white;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .header .header-body {
+    position: initial;
+    flex-direction: row;
+  }
+  .header .header-body .header-manu .manu-lists {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
