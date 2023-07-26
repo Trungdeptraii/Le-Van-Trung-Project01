@@ -147,7 +147,7 @@
         --colum-number: 12;
     }
 }
-@media screen and (min-width: 992x) {
+@media screen and (min-width: 992px) {
     .col-lg-1{
         --colum-number: 1;
     }
