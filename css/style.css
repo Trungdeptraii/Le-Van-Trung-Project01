@@ -180,10 +180,18 @@ ul, ol {
 .header .header-body .header-icon .cart-icon, .header .header-body .header-icon .search-icon {
   line-height: 130px;
 }
-.header .header-body .header-icon .cart-icon::after {
-  content: "";
-  height: 15px;
-  width: 15px;
+.header .header-body .header-icon .cart-icon img {
+  position: relative;
+}
+.header .header-body .header-icon .cart-icon img::after {
+  position: absolute;
+  display: block;
+  content: "3";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #e05050;
+  color: white;
 }
 
 .detail .detail-header {
@@ -403,7 +411,7 @@ ul, ol {
   margin-top: 120px;
 }
 .protected .container {
-  width: 1305px;
+  max-width: 1305px;
 }
 .protected .protect-header {
   text-align: center;
@@ -425,7 +433,7 @@ ul, ol {
 }
 .protected .protect-item {
   position: relative;
-  width: 415px;
+  max-width: 415px;
   height: 431px;
   background-color: #FFF0E7;
   border-radius: 10px;

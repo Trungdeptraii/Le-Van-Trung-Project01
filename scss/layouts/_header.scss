@@ -94,11 +94,22 @@
             .cart-icon, .search-icon{
                 line-height: 130px;
             }
-            .cart-icon::after{
-                content: '';
-                height: 15px;
-                width: 15px;
+            .cart-icon{
+                img{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        display: block;
+                        content: '3';
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        background-color: #e05050;
+                        color: white;
+                    }
+                }
             }
+            
         }
     }
     
@@ -333,7 +344,7 @@
 .protected{
     margin-top: 120px;
     .container{
-        width: 1305px;
+        max-width: 1305px;
     }
     .protect-header{
         text-align: center;
@@ -355,7 +366,7 @@
     }
     .protect-item{
         position: relative;
-        width: 415px;
+        max-width: 415px;
         height: 431px;
         background-color: #FFF0E7;
         border-radius: 10px;
@@ -372,7 +383,7 @@
             color: #e05050;
         }
         .protect-photo{
-            // position: relative;
+            
         }
         .protect-des{
             margin: 69px 0 0 33px;
