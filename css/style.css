@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -262,7 +263,7 @@ ul, ol {
   font-style: normal;
   font-weight: 400;
   line-height: 37px;
-  padding-left: 40px;
+  padding: 0 20px 0 40px;
 }
 
 .product .row {
@@ -336,6 +337,9 @@ ul, ol {
   font-weight: 600;
 }
 
+.news .new-content {
+  margin-bottom: 120px;
+}
 .news .new-header {
   margin: 160px 0 60px 0;
   text-align: center;
@@ -356,6 +360,8 @@ ul, ol {
 }
 .news .new-items .sub-photo {
   margin: 19.5px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .news .new-items .sub-photo span {
   font-size: 1.8rem;
@@ -375,6 +381,184 @@ ul, ol {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 24.5px;
+}
+.news .see-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 4px;
+  width: 184px;
+  height: 56px;
+  border: 1px solid #46B20F;
+  border-radius: 8px;
+}
+.news .see-more a {
+  line-height: 56px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.protected {
+  margin-top: 120px;
+}
+.protected .container {
+  width: 1305px;
+}
+.protected .protect-header {
+  text-align: center;
+}
+.protected .protect-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.protected .protect-header p {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+.protected .protect-content {
+  margin-top: 60px;
+  counter-reset: number;
+}
+.protected .protect-item {
+  position: relative;
+  width: 415px;
+  height: 431px;
+  background-color: #FFF0E7;
+  border-radius: 10px;
+  counter-increment: number;
+}
+.protected .protect-item::before {
+  position: absolute;
+  bottom: 0;
+  left: 33px;
+  content: "0" counter(number) ". Thân trên đũa";
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #e05050;
+}
+.protected .protect-item .protect-des {
+  margin: 69px 0 0 33px;
+}
+.protected .protect-item .protect-des p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.45rem;
+}
+
+.section-form {
+  margin: 160px 0 120px 0;
+}
+.section-form .form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+}
+.section-form .form-title {
+  margin: 60px 0 32px 0;
+}
+.section-form .field {
+  height: auto;
+  display: flex;
+  border-radius: 8px;
+  gap: 10px;
+}
+.section-form .field .name {
+  flex: 1 0 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #A3A3A3;
+  padding: 15px;
+  height: 54px;
+  font-size: 1.8rem;
+}
+.section-form .field .email, .section-form .field .phone {
+  flex: 1 1 50%;
+  border-radius: 8px;
+  border: 1px solid #A3A3A3;
+  padding: 15px;
+  height: 54px;
+  font-size: 1.8rem;
+}
+.section-form .field .massage {
+  border-radius: 8px;
+  border: 1px solid #A3A3A3;
+  padding: 16px 0 140px 16px;
+  flex: 1 0 100%;
+  font-size: 1.8rem;
+}
+.section-form .btn-submit-form {
+  border-radius: 8px;
+  color: white;
+  background-color: #46B20F;
+  height: 56px;
+  width: 154px;
+  margin-left: auto;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #F2FFEC;
+  padding: 80px 0 0 0;
+}
+.footer .photo {
+  position: relative;
+  top: -44px;
+}
+.footer .photo img {
+  width: 250px;
+  height: 191px;
+  object-fit: cover;
+}
+.footer .photo h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer .icon-footer {
+  padding-right: 10px;
+  font-size: 2.4rem;
+}
+.footer h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 26px;
+  color: #46B20F;
+  margin-bottom: 16px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer ul li, .footer ul a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24.5px;
+}
+.footer .about {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .about ul {
+  display: flex;
+  gap: 6px;
+  flex-direction: row;
+}
+.footer .about ul li {
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  background-color: #DCFFCA;
+  font-size: 24px;
 }
 
 @media screen and (min-width: 576px) {
