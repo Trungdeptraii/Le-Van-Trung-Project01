@@ -16,6 +16,7 @@ body {
   color: #2C2C2C;
   line-height: 1.2;
   font-family: Inter, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -192,6 +193,55 @@ ul, ol {
   border-radius: 50%;
   background-color: #e05050;
   color: white;
+}
+
+.information {
+  margin-bottom: 120px;
+}
+.information .info-left {
+  margin: 260px 0 32px 0;
+}
+.information .info-left h1 {
+  font-size: 4.4rem;
+  font-weight: 800;
+  line-height: 5.7rem;
+  color: #2C2C2C;
+}
+.information .info-left h2 {
+  font-size: 5.2rem;
+  font-weight: 800;
+  color: #2C2C2C;
+  max-width: 460px;
+  margin-bottom: 32px;
+}
+.information .info-left p {
+  color: #2C2C2C;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.45rem;
+  max-width: 539px;
+}
+.information .info-right .photo {
+  background-color: #DCFFCA;
+  height: 850px;
+  width: 48vw;
+  position: relative;
+  border-radius: 20px 0px 0px 20px;
+}
+.information .info-right .photo span {
+  color: #216000;
+  transform: rotate(90deg);
+  font-size: 18rem;
+  font-weight: 800;
+  line-height: 1;
+  position: absolute;
+  left: 450px;
+  top: 200px;
+  opacity: 0.15;
+}
+.information .info-right .photo img {
+  margin-left: -16%;
+  width: 80%;
 }
 
 .detail .detail-header {
@@ -441,7 +491,7 @@ ul, ol {
 }
 .protected .protect-item::before {
   position: absolute;
-  bottom: 0;
+  top: 267px;
   left: 33px;
   content: "0" counter(number) ". Thân trên đũa";
   display: block;
@@ -457,6 +507,33 @@ ul, ol {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.45rem;
+}
+
+.outstanding {
+  margin: 160px 0;
+}
+.outstanding .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.outstanding .outstanding-item {
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  max-width: 348px;
+  height: 157px;
+  margin-bottom: 47px;
+}
+.outstanding .quanlity h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  margin-bottom: 8px;
+}
+.outstanding .quanlity p {
+  max-width: 260px;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .section-form {
@@ -532,6 +609,7 @@ ul, ol {
 .footer .icon-footer {
   padding-right: 10px;
   font-size: 2.4rem;
+  color: #FF6916;
 }
 .footer h3 {
   font-size: 2.8rem;
@@ -645,7 +723,6 @@ ul, ol {
   .information {
     width: 100vw;
     height: 850px;
-    background-color: aquamarine;
   }
   .detail .detail-prominent {
     margin: 0 auto;

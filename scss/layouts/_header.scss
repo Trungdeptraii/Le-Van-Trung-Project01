@@ -114,6 +114,56 @@
     }
     
 }
+.information{
+    margin-bottom: 120px;
+    .info-left{
+        margin: 260px 0 32px 0;
+        h1{
+            font-size: 4.4rem;
+            font-weight: 800;
+            line-height: 5.7rem;
+            color: $textColor;
+        }
+        h2{
+            font-size: 5.2rem;
+            font-weight: 800;
+            color: $textColor;
+            max-width: 460px;
+            margin-bottom: 32px;
+        }
+        p{
+            color: $textColor;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+            max-width: 539px;
+        }
+    }
+    .info-right{
+        .photo{
+            background-color: #DCFFCA;
+            height: 850px;
+            width: 48vw;
+            position: relative;
+            border-radius: 20px 0px 0px 20px;
+            span{
+                color: #216000;
+                transform: rotate(90deg);
+                font-size: 18rem;
+                font-weight: 800;
+                line-height: 1;
+                position: absolute;
+                left: 450px;
+                top: 200px;
+                opacity: 0.15;
+            }
+            img{
+                margin-left: -16%;
+                width: 80%;
+            }
+        }
+    }
+}
 .detail{
     .detail-header{
         max-width: 772px;
@@ -373,7 +423,7 @@
         counter-increment: number;
         &::before{
             position: absolute;
-            bottom: 0 ;//calc(-234px - 29px - 32px);
+            top: 267px;
             left: 33px;
             content: "0" counter(number) ". Thân trên đũa";
             display: block;
@@ -392,6 +442,34 @@
                 font-weight: 400;
                 line-height: 2.45rem;
             }
+        }
+    }
+}
+.outstanding{
+    margin: 160px 0;
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .outstanding-item{
+        display: flex;
+        flex-direction: row;
+        gap: 19px;
+        max-width: 348px;
+        height: 157px;
+        margin-bottom: 47px;
+    }
+    .quanlity{
+        h3{
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.2rem;
+            margin-bottom: 8px;
+        }
+        p{
+            max-width: 260px;
+            font-size: 1.8rem;
+            font-weight: 500;
         }
     }
 }
@@ -468,6 +546,7 @@
     .icon-footer{
         padding-right: 10px;
         font-size: 2.4rem;
+        color: #FF6916;
     }
     h3{
         font-size: 2.8rem;
@@ -816,7 +895,6 @@
     .information{
        width: 100vw;
        height: 850px;
-       background-color: aquamarine;
     }
     .detail{
         .detail-prominent{
